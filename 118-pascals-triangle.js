@@ -10,7 +10,7 @@ var generate = function(numRows) {
         const middle = ((i + 1) / 2);
         for (let j = 1; j <= i; j++) {
             if (j === i) {
-                row.push(1)
+                row.push(1);
             } else  {
                 row.push(allRows[i - 1][j - 1] + allRows[i - 1][j]);
             }
