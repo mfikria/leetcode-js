@@ -25,13 +25,12 @@ var getIntersectionNode = function(headA, headB) {
                 pointerA = headA;
                 pointerB = headB;
             }
-        } else {
-            if (pointerA.next !== pointerIntersection) {
-                pointerA = pointerA.next;
-            }
-            if (pointerB.next !== pointerIntersection) {
-                pointerB = pointerB.next;
-            }   
+        }
+        if (pointerA.next !== pointerIntersection) {
+            pointerA = pointerA.next;
+        }
+        if (pointerB.next !== pointerIntersection) {
+            pointerB = pointerB.next;
         }
     }
     
